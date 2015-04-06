@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="69dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="Logr"
+                android:id="@+id/title"
+                android:layout_gravity="center_horizontal|top"
+                android:textSize="50dp"
+                android:layout_weight="0.58" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/submit"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/confirm" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/stop"
+                android:background="@drawable/stop"
+                android:layout_centerVertical="true" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/play"
+                android:background="@drawable/playdone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/player_record"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_weight="0.56">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/left"
+                android:src="@drawable/arrowleft"
+                android:scaleType="fitXY"
+                android:background="#ff8a8486" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/group"
+                android:layout_alignBottom="@+id/left"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrowright"
+                android:background="#ff8a8486"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/text" />
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:background="@drawable/team"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:layout_alignParentTop="false"
+                android:background="@drawable/file"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
